@@ -18,15 +18,17 @@ API REST para gerenciamento de brinquedos de uma empresa voltada ao público inf
 ### 📌 `GET /brinquedos`
 Retorna a lista de brinquedos cadastrados.
 
+##  📌 `GET Buscar Brinquedo por ID`
+
 ### 📌 `POST /brinquedos`
 Cadastra um novo brinquedo.
 
 #### 🔶 Exemplo de JSON para cadastro:
 ```json
 {
-  "nome": "Boneca Mágica",
-  "tipo": "Boneca",
-  "classificacao": "3+",
+  "nome": "Boneco G.I.JOE",
+  "tipo": "Boneco",
+  "classificacao": "7+",
   "tamanho": "Médio",
   "preco": 49.99
 }
