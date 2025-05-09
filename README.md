@@ -10,6 +10,9 @@ API REST para gerenciamento de brinquedos de uma empresa voltada ao público inf
 - Oracle Database (SQL Developer)
 - Postman
 
+![java spring](https://github.com/user-attachments/assets/f80ed9c0-6b99-4ad8-b9b3-dd0d7b8114da)
+
+
 ## Endpoints disponíveis
 
 ### 📌 `GET /brinquedos`
