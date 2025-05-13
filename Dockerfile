@@ -2,7 +2,7 @@
 FROM ubuntu:latest AS build
 
 # Atualize o repositório e instale o JDK e Maven
-RUN apt-get update && apt-get install openjdk-17-jdk maven -y
+RUN apt-get update && apt-get install openjdk-21-jdk maven -y
 
 # Defina o diretório de trabalho para a construção
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY Fab_brinquedo/src ./src
 RUN mvn clean install -DskipTests
 
 # Use uma imagem base mais leve para executar o aplicativo
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Expor a porta 8080
 EXPOSE 8080
